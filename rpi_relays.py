@@ -19,10 +19,15 @@ class RaspberryRelayLogic:
         if intersection:
             if count < 100:
                 # Turn on red light if a train is detected for less than 100 frames
+                # print(self.red_pin)
                 pass
             else:
+                # print(self.yellow_pin)
+
                 # Turn on yellow light if a train is detected for more than 100 frames
                 pass
         elif count == 0:
+            # print(self.green_pin)
+
             # Turn on green light if no train is detected and count is reset to 0
             pass
